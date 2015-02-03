@@ -1,0 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias gpushom='git push -u origin master'
+alias gstat='git status'
+alias gc='git commit -am'
+alias gadd='git add -A'
+alias gpullom='git pull origin master'
+PS1='[\u@\h \W]\$ '
+source /usr/share/git/completion/git-completion.bash
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.composer/vendor/bin" # ADD laravel to path
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
