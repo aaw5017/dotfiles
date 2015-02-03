@@ -1,0 +1,18 @@
+[submodule "libemmetvim"]
+	path = vim/vimdir/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "libvimcolorsolarized"]
+	path = vim/vimdir/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "libvimcoloratomdark"]
+	path = vim/vimdir/bundle/vim-atom-dark
+	url = https://github.com/gosukiwi/vim-atom-dark
+[submodule "libvimjs"]
+	path = vim/vimdir/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "libvimjade"]
+	path = vim/vimdir/bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "libvimless"]
+	path = vim/vimdir/bundle/vim-less
+	url = https://github.com/groenewege/vim-less
