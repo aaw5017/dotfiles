@@ -1,0 +1,7 @@
+autoload -U colors && colors
+PROMPT="%n@%m %~ "
+
+alias gc='git commit -m'
+alias gstat='git status'
+alias gadd='git add .'
+alias gpushom='git push origin master'
