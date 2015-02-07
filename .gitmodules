@@ -16,3 +16,6 @@
 [submodule "libvimless"]
 	path = vim/vimdir/bundle/vim-less
 	url = https://github.com/groenewege/vim-less
+[submodule "emmet-vim"]
+	path = emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
