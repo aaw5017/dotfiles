@@ -1,0 +1,6 @@
+[user]
+	name = Alex Wardi
+	email = aaw5017@gmail.com
+[diff]
+	tool = gvimdiff
+	guitool = gvimdiff
