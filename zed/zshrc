@@ -1,6 +1,8 @@
 autoload -U colors && colors
 PROMPT="%n@%m %~ "
 
+export PATH="/usr/local/sbin:$PATH"
+
 alias gc='git commit -m'
 alias gstat='git status'
 alias gadd='git add .'
