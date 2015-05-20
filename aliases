@@ -6,4 +6,5 @@ clear=cls
 gstat=git status
 gpushom=git push origin master
 gc=git commit -m $*
+gca=git commit -am $*
 gadd=git add $*
