@@ -4,6 +4,7 @@ PROMPT="%n@%m %~ "
 export PATH="/usr/local/sbin:$PATH"
 
 alias gc='git commit -m'
+alias gca='git commit -am'
 alias gstat='git status'
 alias gadd='git add .'
 alias gpushom='git push origin master'
@@ -14,3 +15,5 @@ alias bdoc='brew doctor'
 alias cdp='cd ~/www/personal'
 alias cdsc='cd ~/www/SoundCollective'
 alias msc='mongo soundcollective'
+alias cdwild='cd $HOME/www/php/Wild/wp-content/themes/Divi-child'
+alias cddots='cd ~/bin/dotfiles'
