@@ -8,7 +8,7 @@ colorscheme atom-dark
 filetype plugin indent on
 set number
 set autoindent
-set smartindent
+set cindent
 set shiftwidth=2
 set tabstop=2
 set backspace=2
