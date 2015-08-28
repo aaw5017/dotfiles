@@ -8,3 +8,4 @@ gpushom=git push origin master
 gc=git commit -m $*
 gca=git commit -am $*
 gadd=git add $*
+gdiff=git diff $*
