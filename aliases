@@ -10,3 +10,4 @@ gca=git commit -am $*
 gadd=git add $*
 gdiff=git diff $*
 gpull=git fetch && git merge FETCH_HEAD
+cdelysium=cd c:\_Source\Elysium
