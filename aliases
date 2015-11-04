@@ -10,4 +10,6 @@ gca=git commit -am $*
 gadd=git add $*
 gdiff=git diff $*
 gpull=git fetch && git merge FETCH_HEAD
+gsmi=git submodule init
+gsmu=git submodule update
 cdelysium=cd c:\_Source\Elysium
