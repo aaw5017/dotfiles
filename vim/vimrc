@@ -37,5 +37,7 @@ augroup END
 
 let g:netrw_winsize=15
 let g:NERDTreeDirArrows = 1
-" Use ~x on an English Windows version or ~n for French.
-au GUIEnter * simalt ~x
+if has("win32") || has("win16")
+	" Use ~x on an English Windows version or ~n for French.
+	au GUIEnter * simalt ~x
+endif
