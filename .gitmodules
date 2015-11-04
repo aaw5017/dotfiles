@@ -19,3 +19,6 @@
 [submodule "emmet-vim"]
 	path = emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "nerdtree"]
+	path = vim/vimdir/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
