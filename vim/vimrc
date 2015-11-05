@@ -1,6 +1,8 @@
 runtime! archlinux.vim
 set nocompatible
 set t_Co=256
+set encoding=utf-8
+set fileencoding=utf-8
 execute pathogen#infect()
 syntax on
 set background=dark
@@ -40,4 +42,5 @@ let g:NERDTreeDirArrows = 1
 if has("win32") || has("win16")
 	" Use ~x on an English Windows version or ~n for French.
 	au GUIEnter * simalt ~x
+	set guifont=Consolas:h11
 endif
