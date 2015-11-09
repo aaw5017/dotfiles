@@ -38,9 +38,24 @@ augroup JavaScriptCmds
 augroup END
 
 let g:netrw_winsize=15
-let g:NERDTreeDirArrows = 1
 if has("win32") || has("win16")
 	" Use ~x on an English Windows version or ~n for French.
 	au GUIEnter * simalt ~x
 	set guifont=Consolas:h11
 endif
+
+"NERDTree Settings
+let g:NERDTreeDirArrows = 1
+" VIM will close if NERDTree is the only window
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"Syntastic Settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
