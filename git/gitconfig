@@ -4,5 +4,3 @@
 [diff]
 	tool = gvimdiff
 	guitool = gvimdiff
-[mergetool]
-	keepBackup = false
