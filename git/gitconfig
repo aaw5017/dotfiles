@@ -4,3 +4,5 @@
 [diff]
 	tool = gvimdiff
 	guitool = gvimdiff
+[color]
+    ui = auto
