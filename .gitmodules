@@ -30,3 +30,11 @@
 	path = vim/vimdir/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
+[submodule "editorconfigvim"]
+	path = vim/vimdir/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+	ignore = dirty
+[submodule "syntastic"]
+	path = vim/vimdir/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+	ignore = dirty
