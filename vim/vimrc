@@ -49,6 +49,10 @@ endif
 let g:NERDTreeDirArrows = 1
 " VIM will close if NERDTree is the only window
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Open NERDTree when Vim starts
+autocmd vimenter * NERDTree
+" Toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 "Syntastic Settings
 set statusline+=%#warningmsg#
