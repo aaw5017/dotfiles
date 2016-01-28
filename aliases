@@ -17,6 +17,6 @@ gsmu=git submodule update
 gco=git checkout $*
 gb=git branch $*
 gcob=git checkout -b $*
-cd~=cd /d c:\users\aaw50
+cd~=cd %USERPROFILE%
 cdelysium=cd c:\_Source\Elysium
 cdsource=cd c:\_Source
