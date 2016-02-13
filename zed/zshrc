@@ -4,16 +4,20 @@ autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats "(%F{2}%b%f)"
 setopt prompt_subst
 
-# Variables
+# VARIABLES
 NEWLINE=$'\n'
 
+# FUNCTIONS
 precmd() {
     vcs_info
 }
-PROMPT='${NEWLINE}%~ ${vcs_info_msg_0_}${NEWLINE}$ '
 
+# THE PROMPT
+PROMPT='${NEWLINE}%~ ${vcs_info_msg_0_}${NEWLINE}$ '
+# PATH
 export PATH="/usr/local/sbin:$PATH"
 
+# ALIASES
 alias gc='git commit -m'
 alias gca='git commit -am'
 alias gstat='git status'
