@@ -24,6 +24,11 @@ set autowrite
 set splitbelow
 set splitright
 
+if has('persistent_undo')
+    set undofile
+    set undodir=$HOME/.vim/undo
+endif
+
 "auto commands
 "autocmd BufRead,BufWritePre *.html,*.js normal gg=G
 
