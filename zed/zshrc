@@ -1,5 +1,16 @@
 autoload -U colors && colors
-PROMPT="%n@%m %~ "
+autoload -Uz compinit && compinit
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats "(%F{2}%b%f)"
+setopt prompt_subst
+
+# Variables
+NEWLINE=$'\n'
+
+precmd() {
+    vcs_info
+}
+PROMPT='${NEWLINE}%~ ${vcs_info_msg_0_}${NEWLINE}$ '
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -8,6 +19,10 @@ alias gca='git commit -am'
 alias gstat='git status'
 alias gadd='git add .'
 alias gdiff='git diff'
+alias gdiffc='git diff --cached'
+alias gco='git checkout'
+alias gb='git branch'
+alias gcob='git checkout -b'
 alias gpushom='git push origin master'
 alias hlt='heroku logs --tail'
 alias gpushhm='git push heroku master'
