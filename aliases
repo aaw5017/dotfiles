@@ -20,3 +20,4 @@ gcob=git checkout -b $*
 cd~=cd %USERPROFILE%
 cdelysium=cd c:\_Source\Elysium
 cdsource=cd c:\_Source
+svnu=svn update
