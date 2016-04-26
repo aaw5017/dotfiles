@@ -1,7 +1,6 @@
 autoload -U colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats "(%F{2}%b%f)"
 setopt prompt_subst
 
 # VARIABLES
@@ -9,15 +8,23 @@ NEWLINE=$'\n'
 
 # FUNCTIONS
 precmd() {
+    local gstat="$(git status 2> /dev/null)"
+    if [[ $gstat =~ "working directory clean" ]]; then
+        zstyle ':vcs_info:*' formats "(%F{green}%b%f)"
+    else
+        zstyle ':vcs_info:*' formats "(%F{red}%b%f)"
+    fi
+
     vcs_info
 }
 
 # THE PROMPT
-PROMPT='${NEWLINE}%~ ${vcs_info_msg_0_}${NEWLINE}$ '
+PS1='${NEWLINE}%~ ${vcs_info_msg_0_}${NEWLINE}$ '
 # PATH
 export PATH="/usr/local/sbin:$PATH"
 
 # ALIASES
+alias ls='ls -GF'
 alias gc='git commit -m'
 alias gca='git commit -am'
 alias gstat='git status'
