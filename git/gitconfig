@@ -2,8 +2,10 @@
 	name = Alex Wardi
 	email = aaw5017@gmail.com
 [diff]
-	tool = gvimdiff
+	tool = winmerge
 	guitool = winmerge
+[difftool]
+    prompt = false
 [difftool "winmerge"]
     path = c:/Program Files (x86)/WinMerge/WinMergeU.exe
     cmd = \"c:/Program Files (x86)/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\"
