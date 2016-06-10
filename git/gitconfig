@@ -10,9 +10,9 @@
     cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe \"$LOCAL\" \"$REMOTE\"
 [merge]
     tool = diffmerge
-[mergetool]
+[mergetool "diffmerge"]
     trustExitCode = true
     keepBackup = false
-    cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe /merge /result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+    cmd = C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe --merge --result=$MERGED $LOCAL $BASE $REMOTE
 [color]
     ui = auto
