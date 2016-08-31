@@ -9,7 +9,7 @@ NEWLINE=$'\n'
 # FUNCTIONS
 precmd() {
     local gstat="$(git status 2> /dev/null)"
-    if [[ $gstat =~ "working directory clean" ]]; then
+    if [[ $gstat =~ "working (directory|tree) clean" ]]; then
         zstyle ':vcs_info:*' formats "(%F{green}%b%f)"
     else
         zstyle ':vcs_info:*' formats "(%F{red}%b%f)"
