@@ -21,3 +21,5 @@ cd~=cd %USERPROFILE%
 cdelysium=cd c:\_Source\Elysium
 cdsource=cd c:\_Source
 svnu=svn update
+ssh-copy-id=cat ~/.ssh/id_rsa.pub | ssh $1 "[ ! -d ~/.ssh ] && mkdir ~/.ssh && chmod 700 ~/.ssh; cat >> ~/.ssh/authorized_keys && sort -u ~/.ssh/authorized_keys -o ~/.ssh/authorized_keys && chmod 700 ~/.ssh/authorized_keys"
+sshwebsocketsinternal=ssh devbuild@172.16.124.73
