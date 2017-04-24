@@ -38,5 +38,5 @@ cd~=cd %USERPROFILE%
 cdelysium=cd c:\dev\Elysium
 cddev=cd c:\dev
 svnu=svn update
-cddots=cd %USERPROFILE%\dotfiles
+cddots=cd %USERPROFILE%\bin\dotfiles
 cdironbox=cd c:\inetpub\wwwroot\IronBox
