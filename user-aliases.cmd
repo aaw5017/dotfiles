@@ -40,3 +40,5 @@ cddev=cd c:\dev
 svnu=svn update
 cddots=cd %USERPROFILE%\bin\dotfiles
 cdironbox=cd c:\inetpub\wwwroot\IronBox
+gfreshdev=git checkout dev && git pull origin dev && git branch -d $*
+gstashu=git stash -u
