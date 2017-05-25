@@ -4,12 +4,6 @@
 ;= rem In batch mode, jump to the end of the file
 ;= goto:eof
 ;= Add aliases below here
-;= @echo off
-;= rem Call DOSKEY and use this file as the macrofile
-;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
-;= rem In batch mode, jump to the end of the file
-;= goto:eof
-;= Add aliases below here
 e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
 ls=ls --show-control-chars -F --color $*
@@ -40,5 +34,5 @@ cddev=cd c:\dev
 svnu=svn update
 cddots=cd %USERPROFILE%\bin\dotfiles
 cdironbox=cd c:\inetpub\wwwroot\IronBox
-gfreshdev=git checkout dev && git pull origin dev && git branch -d $*
+gbdone=git rev-parse --abbrev-ref HEAD >branchname.txt && set /P bname=<branchname.txt && del branchname.txt && git checkout dev && git pull origin dev && git branch -d ^%bname%
 gstashu=git stash -u
