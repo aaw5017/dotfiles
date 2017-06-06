@@ -35,5 +35,6 @@ svnu=svn update
 cddots=cd %USERPROFILE%\bin\dotfiles
 cdironbox=cd c:\inetpub\wwwroot\IronBox
 cdpersonal=cd c:\inetpub\wwwroot\alex\personal
+cdatlas=cd c:\dev\Elysium\SocialPandas\AtlasStack
 gbdone=git rev-parse --abbrev-ref HEAD >branchname.txt && set /P bname=<branchname.txt && del branchname.txt && git checkout dev && git pull origin dev && call git branch -d ^%bname^%
 gstashu=git stash -u
